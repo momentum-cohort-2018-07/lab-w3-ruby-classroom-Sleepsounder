@@ -60,3 +60,7 @@ class ClassroomTest < Minitest::Test
     assert_equal [:remy, :kelly, :indiana, :ryan, :riley, :allison, :nevada, :dorian, :drew, :chase], top_students(DATA, 10)
   end
 end
+
+def assignment_score(grade_hash, student, assignment_num)
+  grade_hash[student][assignment_num -1]
+end
